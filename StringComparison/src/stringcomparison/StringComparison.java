@@ -18,7 +18,7 @@ public class StringComparison {
     public static void main(String[] args) {
 
         String a = "and";
-        String b = "but";
+        String b = "zut";
 
         int equal = 0;        
         int count = 0;
@@ -33,11 +33,11 @@ public class StringComparison {
         for (int i = 0; i < count; i++) {
 
             if (a.charAt(i) > b.charAt(i)) {
-                equal = 1;               
+                equal = a.charAt(i)-b.charAt(i);               
                 break;
             } 
             else if (a.charAt(i) < b.charAt(i)) {
-                equal = -1;               
+                equal = b.charAt(i)-a.charAt(i);             
                 break;
             }
 
