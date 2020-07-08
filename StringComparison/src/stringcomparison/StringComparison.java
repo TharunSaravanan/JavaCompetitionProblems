@@ -1,13 +1,7 @@
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package stringcomparison;
 
 /**
- *
+ * Compares two strings and return ASCII character difference of first different characters
  * @author tharun
  */
 public class StringComparison {
