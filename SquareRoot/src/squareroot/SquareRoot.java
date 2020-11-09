@@ -1,7 +1,5 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Find square root for a perfect square using simple for loop
  */
 package squareroot;
 
@@ -38,8 +36,10 @@ public class SquareRoot {
 
             System.out.println("Your number is not a perfect square!");
         }
-
-        System.out.println("the square root is " + answer);
+        else{
+            
+             System.out.println("the square root is " + answer);
+        }  
     }
 
 }
