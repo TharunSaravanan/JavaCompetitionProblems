@@ -34,18 +34,20 @@ public class Tilesize {
         System.out.println("enter t2 price in in dollars");
         double t2price = in.nextDouble();
         
-        double area = (length * length) / 2;
+        double firstrow1 = Math.ceil(length / t1);
+        double firstrow2 = Math.ceil(length / t2);
         
-        double t1amount = area / (t1 * t1);
-        double t2amount = area / (t2 * t2);
-        double t1total = t1amount * t1price;
-        double t2total = t2amount * t2price;
+        double totaltiles1 = (firstrow1 * (firstrow1 + 1)) / 2;
+        double totaltiles2 = (firstrow2 * (firstrow2 + 1)) / 2;
         
-        if(t2total < t1total) {
-            System.out.println("the second tiles are cheaper");
+        double totalmoney1 = totaltiles1 * t1price;
+        double totalmoney2 = totaltiles2 * t2price;
+        
+        if((totaltiles2) < (totaltiles1)) {
+            System.out.println("the second tiles are cheaper. Price " + totalmoney2);
         }
         else {
-            System.out.println("the first tiles are cheaper");
+            System.out.println("the first tiles are cheaper. Price " + totalmoney1);
         }
 
     }
