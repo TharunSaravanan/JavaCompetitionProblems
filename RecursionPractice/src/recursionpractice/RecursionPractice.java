@@ -16,14 +16,15 @@ public class RecursionPractice {
      */
     public static void main(String[] args) {
         int result = fact(4);
-    System.out.println(result);
-  }
-  public static int fact(int k) {
-      
-      if (k == 1){
-          return 1;
-      }
+        System.out.println(result);
+    }
 
-      return k * fact(k - 1);
-  }
+    public static int fact(int k) {
+
+        if (k == 1) {
+            return 1;
+        }
+
+        return k * fact(k - 1);
+    }
 }
