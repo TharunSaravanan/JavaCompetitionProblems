@@ -15,10 +15,16 @@ public class Test {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        for(int i = 601; i <= 600; i++)
-        {
-            System.out.println("test");
+        bc(6, 2);
+    }
+
+    public static void bc(int p, int q) {
+        if (p / q == 0) {
+            System.out.println(p + q + 1);
+        } else {
+            System.out.println(p);
+            bc(p / q, q);
         }
     }
-    
+
 }
